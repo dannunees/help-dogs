@@ -1,7 +1,7 @@
 const App = () => {
   return (
     <>
-      <div className="intro">
+      <div className="intro pt-20 md:pt-0">
         
         <div className="container py-20 md:flex justify-end items-center gap-20">
           <div className="w-[100%] md:w-[400px]">
