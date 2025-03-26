@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1,h2,h3,h4,h5 {
+    font-family: "Pangolin", cursive;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    position: relative;
+}
+
+.intro::before {
+    content: "";
+    position: absolute;
+    background-image: url('/before-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 55%;
+    height: 530px;
+    top: 0;
+    right: 0;
+}
+
+@media(max-width:767px) {
+    .container {
+        max-width: 80%;
+        padding: 0 16px;
+    }
+
+    .intro::before {
+        display: none;
+    }
+}
